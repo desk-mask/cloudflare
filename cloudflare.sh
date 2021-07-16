@@ -8,17 +8,17 @@ set -o nounset
 # Sparkle version
 
 # Place at:
-# sudo wget https://raw.githubusercontent.com/zanjie1999/cloudflare-api-v4-ddns/master/cf-v4-ddns.sh -O /usr/local/bin/cf-ddns.sh
-# sudo chmod +x /usr/local/bin/cf-ddns.sh
-# sudo nano /usr/local/bin/cf-ddns.sh
+# sudo wget https://raw.githubusercontent.com/zanjie1999/cloudflare-api-v4-ddns/master/cf-v4-ddns.sh -O /usr/local/bin/cloudflare.sh
+# sudo chmod +x /usr/local/bin/cloudflare.sh
+# sudo nano /usr/local/bin/cloudflare.sh
 # run `crontab -e` and add next line:
-# */2 * * * * /usr/local/bin/cf-ddns.sh >/dev/null 2>&1
+# */2 * * * * /usr/local/bin/cloudflare.sh >/dev/null 2>&1
 # or you need log:
-# */2 * * * * /usr/local/bin/cf-ddns.sh >> /var/log/cf-ddns.log 2>&1
+# */2 * * * * /usr/local/bin/cloudflare.sh >> /var/log/cf-ddns.log 2>&1
 
 
 # Usage:
-# cf-ddns.sh -k cloudflare-api-key \
+# cloudflare.sh -k cloudflare-api-key \
 #            -u user@example.com \
 #            -h host.example.com \     # fqdn of the record you want to update
 #            -z example.com \          # will show you all zones if forgot, but you need this
